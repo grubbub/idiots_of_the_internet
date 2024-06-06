@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idiots of the Internet</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Idiots of the Internet</h1>
+    </header>
+    <main>
+        <section id="signup">
+            <h2>Sign up for Updates</h2>
+            <form action="/signup" method="post">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+        <section id="episodes">
+            <h2>Podcast Episodes</h2>
+            <ul>
+                <li><a href="#">Episode 1: The Beginning</a></li>
+                <li><a href="#">Episode 2: The Next Step</a></li>
+                <!-- Add more episodes here -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Idiots of the Internet</p>
+    </footer>
+</body>
+</html>
